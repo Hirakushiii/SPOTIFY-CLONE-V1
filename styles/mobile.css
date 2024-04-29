@@ -8,6 +8,7 @@
         opacity: 70%;
         height: 100vh;
     }
+/* <------------------------------------------------------------------------> */
     /* CAROUSEL IMAGE FIRST/MAIN */
     .carousel-main > :first-child{
         position: absolute;
@@ -34,7 +35,8 @@
         font-size: .7rem;
         top: -19rem;
         left: 3rem !important;
-    }
+    }    
+/* <------------------------------------------------------------------------> */
     /* CAROUSEL IMAGE 2 */
     .carousel-2{
         position: absolute;
@@ -43,30 +45,32 @@
     .carousel-2 > :nth-child(1){
         font-size: 1.3rem !important;
         position: relative;
-        top: -18rem;
-        left: -1rem;
+        top: -20rem;
+        left: -2rem;
     }
     .carousel-2 > :nth-child(2){
         font-size: .6rem !important;
         position: relative;
-        top: -18rem;
-        left: -1rem;
+        top: -20rem;
+        left: -2rem;
     }
+/* <------------------------------------------------------------------------> */
     /* CAROUSEL IMAGE 3 */
     .carousel-3{
         position: absolute;
         text-align: center;
     }
     .carousel-3 > :nth-child(1){
+        font-size: 1.3rem !important;
         position: relative;
-        top: -20rem;
-        left: -.6rem;
+        top: -20.5rem;
+        left: -3.2rem;
     }
     .carousel-3 > :nth-child(2){
         text-align: left;
         font-size: .7rem !important;
         position: relative;
-        top: -20rem;
+        top: -20.5rem;
         left: 3rem;
     }
 }
