@@ -11,11 +11,12 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
-    <link rel="stylesheet" href="/src/style.css" />
+    <link rel="stylesheet" href="/styles/style.css"/>
+    <link rel="stylesheet" href="/styles/mobile.css"/>
   </head>
   <body>
     <section>
-      <nav class="navbar navbar-expand-md">
+      <nav class="navbar navbar-expand-sm">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
             <i class="bi bi-spotify text-success"></i>
@@ -40,36 +41,44 @@
                 <!-- <i class="bi bi-sun-fill fs-5 d-none" id="light-mode"></i> -->
               </li>
               <li>
-                <button class="nav-item position-absolute end-0 btn-success rounded" style="background-color: rgba(127, 255, 0, .8); border: none; margin: .5rem 3.2rem 0 0;">LOGIN</button>
+                <button
+                  class="nav-item position-absolute end-0 btn-success rounded"
+                  style="background-color: rgba(127, 255, 0, 0.8); border: none; margin: 0.5rem 3.2rem 0 0"
+                >
+                  LOGIN
+                </button>
               </li>
             </ul>
           </div>
         </div>
       </nav>
-      <div id="carouselExampleAutoplaying" class="carousel slide carousel-container" data-bs-ride="carousel">
+      <!--  data-bs-ride="carousel" -->
+      <div id="carouselExampleAutoplaying" class="carousel slide carousel-container">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="/src/bg4.jpg" class="d-block w-100" height="550rem" alt="bg1.jpg">
-            <div class="carousel-caption d-none d-md-block text-light mb-5"  style="margin-left: -5rem;">
+            <img src="/src/bg4.jpg" class="d-block w-100 carousel-img" height="550rem" alt="bg1.jpg" />
+            <div class="carousel-caption carousel-main text-light mb-5" style="margin-left: -5rem">
               <h5 class="text-start fs-2">Spotify V2 by-Kenn</h5>
-              <p class="text-start mb-3">Experience the joy of personalized playlists, curated recommendations, and seamless music discovery – all in one place. <br> </p>
+              <p class="text-start mb-3">
+                Experience the joy of personalized playlists, curated recommendations, and seamless music discovery – all in one place. <br />
+              </p>
               <p class="text-start">Silahkan Login agar kamu bisa menikmati semua lagu disini!</p>
-              <button class="btn btn-success w-25">Login</button>
+              <button class="btn btn-success w-25 position-absolute start-0">Login</button>
             </div>
           </div>
           <div class="carousel-item">
-            <img src="/src/bg2.jpg" class="d-block w-100" height="550rem" alt="bg2.jpg">
-            <div class="carousel-caption d-none d-md-block mb-5 text-light">
+            <img src="/src/bg2.jpg" class="d-block w-100 carousel-img" height="550rem" alt="bg2.jpg" />
+            <div class="carousel-caption carousel-2 mb-5 text-light">
               <h5 class="fs-2">Cintai kamu seperti kamu mencintai musikmu!</h5>
               <p>Let the music take over – immerse yourself in our Spotify clone and start listening now!</p>
             </div>
           </div>
           <div class="carousel-item">
-            <img src="/src/bg3.jpg" class="d-block w-100" height="550rem" alt="bg3.jpg">
-            <div class="carousel-caption d-none d-md-block text-light mb-5" style="margin-left: -5rem;">
+            <img src="/src/bg3.jpg" class="d-block w-100 carousel-img" height="550rem" alt="bg3.jpg" />
+            <div class="carousel-caption carousel-3 text-light mb-5" style="margin-left: -5rem">
               <h5 class="fs-2">Enjoy the music!</h5>
               <p>Embrace the freedom of limitless music with our Spotify clone – sign up now!</p>
-            </div>  
+            </div>
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">

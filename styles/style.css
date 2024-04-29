@@ -3,15 +3,15 @@
     cursor: pointer;
     transition: 400ms ease-in-out;
 }
-nav{
+nav {
     z-index: 1;
-    background-color: rgba(0, 0, 0, .4);
+    background-color: rgba(0, 0, 0, 0.4);
     backdrop-filter: blur(5px);
     box-shadow: 0 1px 20px 1px black;
 }
-.carousel-container{
+.carousel-container {
     margin: -3.5rem 0 0 0;
-}
-.carousel-container img{
-    border-image: fill 0 linear-gradient(#0001,#000);
+    }
+.carousel-container img {
+    border-image: fill 0 linear-gradient(#0001, #000);
 }
