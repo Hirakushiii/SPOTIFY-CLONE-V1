@@ -78,11 +78,16 @@
         height: 50vh;
     }
     .feature-list .img-feature{
-        width: 15%;
+        width: 70% !important;
+        height: 100% !important;
     }
     .feature-list .feature-text-container{
+        margin-top: 1rem;
         text-align: left;
         color: rgba(255, 255, 255, 10);
+    }
+    #Footer{
+        margin-top: 15rem !important;
     }
     #footer-list{
         display: flex !important;
