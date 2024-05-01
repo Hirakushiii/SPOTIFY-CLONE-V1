@@ -14,9 +14,9 @@
     <link rel="stylesheet" href="/styles/style.css"/>
     <link rel="stylesheet" href="/styles/mobile.css"/>
   </head>
-  <body>
-    <section>
-      <nav class="navbar navbar-expand-sm">
+  <body class="overflow-x-hidden">
+    <section class="section1 overflow-hidden" id="home">
+      <nav class="navbar navbar-expand-sm fixed-top">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
             <i class="bi bi-spotify text-success"></i>
@@ -25,7 +25,7 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" aria-current="page" href="#home">Home</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Artist</a>
@@ -88,6 +88,38 @@
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
+      </div>
+    </section>
+    <section class="section2" style="height: 75vh;">
+      <div class="container">
+        <div class="row justify-content-center text-center mt-3">
+          <div class="col-sm-8 col-md-6 col-lg-4 p-5">
+            <img src="/src/bg1.jpg" alt="image1" class="rounded-circle" width="50%" height="55%">
+            <h1>Heading</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi deserunt, cumque totam est quos laboriosam neque, fugiat nesciunt quo ab velit in. Explicabo, iusto aperiam!</p>
+          </div>
+          <div class="col-sm-8 col-md-6 col-lg-4 p-5">
+            <img src="/src/bg1.jpg" alt="image1" class="rounded-circle " width="50%" height="55%">
+            <h1>Heading</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi deserunt, cumque totam est quos laboriosam neque, fugiat nesciunt quo ab velit in. Explicabo, iusto aperiam!</p>
+          </div>
+          <div class="col-sm-8 col-md-6 col-lg-4 p-5">
+            <img src="/src/bg1.jpg" alt="image1" class="rounded-circle " width="50%" height="55%">
+            <h1>Heading</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi deserunt, cumque totam est quos laboriosam neque, fugiat nesciunt quo ab velit in. Explicabo, iusto aperiam!</p>
+          </div>
+        </div>
+        <br>
+        <hr class="mt-5">
+        <div class="row mt-5 justify-content-end" style="height: 100vh;">
+          <div class="col-lg-6">
+            <h1 class="text-left fs-2">First featurette heading. It’ll blow your mind.</h1>
+            <p class="text-left fs-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni vitae ipsum, eaque tempora nobis officiis officia iusto, necessitatibus, quia laboriosam eos quo quos architecto sunt.</p>
+          </div>
+          <div class="col-lg-6">
+            <div class="w-100 h-100" style="background-image: url(https://picsum.photos/500); background-repeat: no-repeat;"></div>
+          </div>
+        </div>
       </div>
     </section>
     <script
