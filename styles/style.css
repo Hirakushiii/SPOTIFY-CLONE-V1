@@ -1,3 +1,13 @@
+::-webkit-scrollbar {
+    width: 5px; /* Lebar scrollbar */
+}
+::-webkit-scrollbar-thumb {
+    background: #888; /* Warna thumb */
+}
+body{
+    scroll-behavior: smooth;
+    scrollbar-color: #f0f0f0;
+}
 #dark-mode,
 #light-mode {
     cursor: pointer;
