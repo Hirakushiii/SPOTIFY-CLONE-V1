@@ -14,13 +14,13 @@
         position: absolute;
         text-align: center !important;
         font-size: 1.3rem !important;
-        top: -25rem !important;
+        top: -30rem !important;
         left: 3rem !important;
     }
     .carousel-main > :nth-child(2){
         position: absolute;
         font-size: .7rem !important;
-        top: -23rem !important;
+        top: -28rem !important;
         left: 3rem;
     }
     .carousel-main > :nth-child(3){
@@ -33,7 +33,7 @@
     .carousel-main > :nth-child(4){
         position: absolute;
         font-size: .7rem;
-        top: -19rem;
+        top: -25rem;
         left: 3rem !important;
     }    
 /* <------------------------------------------------------------------------> */
