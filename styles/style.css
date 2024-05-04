@@ -25,3 +25,11 @@ nav {
 .carousel-container img {
     border-image: fill 0 linear-gradient(#0001, #000);
 }
+.feature-list{
+    height: 100vh;
+    display: flex;
+    justify-content: end;
+}
+.feature-list .img-feature{
+    height: 100%;
+}

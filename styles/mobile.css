@@ -73,4 +73,20 @@
         top: -20.5rem;
         left: 3rem;
     }
+    .feature-list{
+        margin-bottom: 0 !important;
+        height: 50vh;
+    }
+    .feature-list .img-feature{
+        width: 100%;
+        height: 400%;
+    }
+    .feature-list .feature-text-container{
+        text-align: center;
+        color: rgba(0, 0, 0, 10);
+    }
+    #footer-list{
+        display: flex !important;
+        justify-content: center !important;
+    }
 }
