@@ -6,7 +6,7 @@ btn_login.forEach(e => {
         if(confirm.length === 0){
             return alert('Namamu kosong wak!');
         }else{
-            document.location.href = `app/index.html?n=${confirm}`;
+            document.location.href = `app/index.html?n=${confirm}&&auth=true`;
         }
     })
 });

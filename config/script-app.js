@@ -2,6 +2,7 @@ const urlParams = new URLSearchParams(window.location.search);
 
 // Access a specific parameter:
 const name = urlParams.get('n');
+const auth = urlParams.get('auth');
 const today = new Date();
 
 const hours = today.getHours();
@@ -20,3 +21,4 @@ function sayhelloo(){
 
 
 document.querySelector('#sayhello').innerHTML = `Selamat ${sayhello} ${name}`;
+alert(signin);
