@@ -18,7 +18,5 @@ function sayhelloo(){
         return 'Malam';
     }
 }
-
-
 document.querySelector('#sayhello').innerHTML = `Selamat ${sayhello} ${name}`;
 alert(signin);
