@@ -1,12 +1,31 @@
+body::-webkit-scrollbar {
+    width: 6px; /* Lebar scrollbar */
+}
+body::-webkit-scrollbar-thumb {
+    background: #888; /* Warna thumb */
+}
 body{
+    scroll-behavior: smooth;
+    scrollbar-color: #f0f0f0;
     overflow-x: hidden;
 }
 .card-slider{
-    display: inline !important;
-    overflow: scroll !important;
+    display: flex !important;
+    overflow-x: scroll !important;
+    white-space: nowrap;
+}
+.card-slider::-webkit-scrollbar {
+    height: .5rem;
+    background-color: #999; /* Warna latar belakang scrollbar */
+    margin: 10px 0;
+}
+.card-slider::-webkit-scrollbar-thumb {
+    background-color: #ccc; /* Warna track scrollbar */
+    border-radius: 5px; /* Radius scrollbar */
 }
 .card-slider .card{
-    display: inline-block !important;
+    display: inline !important;
+    flex: 0 0 auto;
     width: 15vw !important;
-    margin-right: .2rem;
+    margin: 0 .4rem 1rem 0;
 }
