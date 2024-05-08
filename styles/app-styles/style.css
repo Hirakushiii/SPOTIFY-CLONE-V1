@@ -1,0 +1,12 @@
+body{
+    overflow-x: hidden;
+}
+.card-slider{
+    display: inline !important;
+    overflow: scroll !important;
+}
+.card-slider .card{
+    display: inline-block !important;
+    width: 15vw !important;
+    margin-right: .2rem;
+}
