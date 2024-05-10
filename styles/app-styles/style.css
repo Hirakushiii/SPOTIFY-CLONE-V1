@@ -15,17 +15,17 @@ body{
     white-space: nowrap;
 }
 .card-slider::-webkit-scrollbar {
-    height: .5rem;
-    background-color: #999; /* Warna latar belakang scrollbar */
+    height: .5rem; /* Warna latar belakang scrollbar */
     margin: 10px 0;
 }
 .card-slider::-webkit-scrollbar-thumb {
-    background-color: #ccc; /* Warna track scrollbar */
+    background-color: #888; /* Warna track scrollbar */
     border-radius: 5px; /* Radius scrollbar */
 }
 .card-slider .card{
     display: inline !important;
     flex: 0 0 auto;
     width: 15vw !important;
+    height: 30.4rem !important;
     margin: 0 .4rem 1rem 0;
 }

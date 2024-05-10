@@ -3,4 +3,10 @@
         display: flex !important;
         overflow: scroll !important;
     }
+    .card-slider{
+        overflow-x: visible;
+    }
+    .card-slider .card{
+        width: 50% !important;
+    }
 }
