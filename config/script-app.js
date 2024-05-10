@@ -18,6 +18,10 @@ function sayhelloo(){
         return 'Malam';
     }
 }
+document.querySelector('#change-tab').addEventListener('click', ()=>{
+    document.location.href = `/app/search.html?n=${name}`;
+})
+
 document.querySelector('#sayhello').innerHTML = `Selamat ${sayhello} ${name}`;
 
 const apiKey = 'https://itunes.apple.com/search?';
