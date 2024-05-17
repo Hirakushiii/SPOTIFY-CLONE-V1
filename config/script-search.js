@@ -18,9 +18,13 @@ input_btn.addEventListener('click', ()=>{
             throw new Error(response.statusText);
             // response.statusText
         }
+        console.log(response);
         return response.json();
     })
     .then(response => {
+        if(response.resultCount === 0){
+            return document.querySelector('#container-content').innerHTML = notfound(input_search.value);
+        }
         let alldata = response.results;
         let cards = "";
         alldata.forEach(m => {
@@ -42,6 +46,9 @@ function fragment(m){
                 </p>
                 <hr>
             </div>`;
+}
+function notfound(s){
+    return `<h1 class="text-center pt-3 text-danger">${s} IS NOT FOUND</h1>`;
 }
 // parseFloat(m.trackTimeMillis / 60)
 function changetime(m){
