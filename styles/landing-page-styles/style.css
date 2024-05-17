@@ -33,3 +33,10 @@ nav {
 .feature-list .img-feature{
     height: 100%;
 }
+nav ul li a:hover{
+    transition: text-decoration 0.3s ease-in;
+}
+nav ul li a:hover{
+    text-underline-offset: 3px;
+    text-decoration: underline 2px rgba(255, 255, 255, .5) !important;
+}

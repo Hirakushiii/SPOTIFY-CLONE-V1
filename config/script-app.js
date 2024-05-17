@@ -21,6 +21,22 @@ function sayhelloo(){
 document.querySelector('#change-tab').addEventListener('click', ()=>{
     document.location.href = `/app/search.html?n=${name}`;
 })
+document.querySelector('#logout').addEventListener('click', ()=>{
+    let auth = confirm('Yakinn mau logout?....');
+    if (auth === false) {
+        return false
+    } else {
+        async function klik(){
+            await Swal.fire({
+                    title: "Log-out Berhasil!",
+                    text: `Dateng lagi yaa ${name}...`,
+                    icon: "success"
+                });
+                document.location.href = `/index.html`;
+            };
+        return klik();
+    }
+})
 
 document.querySelector('#sayhello').innerHTML = `Selamat ${sayhello} ${name}`;
 
@@ -35,6 +51,9 @@ fetch(`${apiKey}term=m&country=us&media=music&limit=10`)
         return response.json();
     })
     .then(response => {
+        document.querySelectorAll('.slider-1').forEach(e => {
+            e.classList.remove('placeholder');
+        });
         let alldata = response.results;
         alldata.forEach(m => {
             document.querySelector('.slider-1').innerHTML += Fragment(m);
@@ -44,6 +63,9 @@ fetch(`${apiKey}term=m&country=us&media=music&limit=10`)
 fetch(`${apiKey}term=a&country=kr&media=music&limit=10`)
     .then(response => response.json())
     .then(data => {
+        document.querySelectorAll('.slider-2').forEach(e => {
+            e.classList.remove('placeholder');
+        });
         let alldata = data.results;
         alldata.forEach(m => {
             document.querySelector('.slider-2').innerHTML += Fragment2(m);
