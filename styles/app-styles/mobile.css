@@ -9,4 +9,7 @@
     .card-slider .card{
         width: 50% !important;
     }
+    .btn-hamburger{
+        display: none;
+    }
 }

@@ -1,6 +1,5 @@
 const urlParams = new URLSearchParams(window.location.search);
 
-// Access a specific parameter:
 const name = urlParams.get('n');
 const auth = urlParams.get('auth');
 const today = new Date();
@@ -102,3 +101,15 @@ function Fragment2(mm){
                 </div>
             </div>`
 }
+
+// NAVBAR FUNCTION
+
+document.querySelector('#nav-to-home').addEventListener('click', ()=>{
+    document.location.href = `../app/index.html?n=${name}`
+});
+document.querySelector('#nav-to-search').addEventListener('click', ()=>{
+    document.location.href = `../app/search.html?n=${name}`
+});
+document.querySelector('#nav-to-profile').addEventListener('click', ()=>{
+    document.location.href = `../app/profile.html?n=${name}`
+});

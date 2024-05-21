@@ -16,17 +16,36 @@
     <link rel="stylesheet" href="/styles/app-styles/mobile.css">
 </head>
 <body>
-    <nav class="navbar bg-body-tertiary">
+    <nav class="navbar bg-body-tertiary nav-top">
         <div class="container-fluid">
-            <a class="navbar-brand">
+            <a class="navbar-brand nav-logo">
                 <i class="bi bi-spotify text-success"></i>
                 Spotify
             </a>
             <span class="navbar-text" id="sayhello"></span>
-            <button class="btn" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+            <button class="btn btn-hamburger" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
                 <i class="bi bi-list"></i>
             </button>
         </div>
+    </nav>
+    <nav class="navbar bg-body rounded-pill navbar-expand d-md-none d-lg-none d-xl-none fixed-bottom">
+        <ul class="navbar-nav nav-justified w-100">
+            <li class="nav-item">
+                <button class="nav-link" id="nav-to-home">
+                    <i class="bi bi-house border-bottom border-success px-1 py-1"></i>
+                </button>
+            </li>
+            <li class="nav-item">
+                <button class="nav-link" id="nav-to-search">
+                    <i class="bi bi-search"></i>
+                </button>
+            </li>
+            <li class="nav-item">
+                <button class="nav-link" id="nav-to-profile">
+                    <i class="bi bi-person"></i>
+                </button>
+            </li>
+        </ul>
     </nav>
     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
     <div class="offcanvas-header">
